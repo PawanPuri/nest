@@ -13,7 +13,6 @@ import { FileInterceptor } from '@nestjs/platform-express';
 import { diskStorage } from 'multer';
 import { VCardService } from './vcard.service';
 import { extname } from 'path';
-import { VCard ,} from './schema';
 
 @Controller('vcard')
 export class VCardController {
@@ -78,3 +77,4 @@ export class VCardController {
      }
    }
 }
+    
