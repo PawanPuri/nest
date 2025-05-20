@@ -4,6 +4,7 @@ import VCardTable from './components/VCardTable';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import IdentityCard from './components/IdentityCard';
 import Navbar from './components/Navbar';
+import Add from './components/Add';
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
         <Routes>
           <Route path='/' element={<Form />} />
           <Route path='/details' element={<VCardTable />} />
+          <Route path='/add' element={<Add />} />
           <Route path='/identity-card/:id' element={<IdentityCard />} />
         </Routes>
       </Router>
